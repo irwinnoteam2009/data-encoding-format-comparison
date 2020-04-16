@@ -1,0 +1,19 @@
+syntax = "proto3";
+package data.encoding.format.tests;
+
+message Superpower {
+    int32 ID = 1;
+    string Name = 2;
+    float Damage = 3;
+    float Energy = 4;
+    bool Passive = 5;
+  }
+
+message Superhero {
+    int32 ID = 1;
+    int32 AffiliationID = 2;
+    string Name = 3;
+    float Life = 4;
+    float Energy = 5;  
+    repeated Superpower Powers = 6;
+  }
